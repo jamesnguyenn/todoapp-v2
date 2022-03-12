@@ -2,6 +2,7 @@
   "name": "todo-v2",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jamesnguyenn.github.io/todoapp-v2/",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@emotion/react": "^11.8.2",
@@ -15,6 +16,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "antd": "^4.19.1",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
@@ -26,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
