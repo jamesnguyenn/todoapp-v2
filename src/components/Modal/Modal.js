@@ -65,7 +65,7 @@ function ModalShow({
         justifyContent: "center",
         height: "70%",
       }}
-      title="Add Todo"
+      title={id ? "Edit Todo" : "Add Todo"}
       visible={activeModal}
       onOk={id ? handleEditButton : handleModalAdd}
       onCancel={handleModalCancel}
